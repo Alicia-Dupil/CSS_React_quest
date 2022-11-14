@@ -1,27 +1,59 @@
-$fontStyle: Helvetica, sans-serif;
-$primary-color: #0a0a0a;
-$second-color: #8217ec;
+$fontStyle: Arial, Helvetica, sans-serif;
+$primary-color: #fefefe;
+$second-color: #0aa414;
 
-img  {
-    width: 4rem;
+div {
+    background-image: url("./backCard.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    margin: 4rem 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-h1 {
-    font-style: $fontStyle;
+.number {
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-end;
+}
+
+.number p {
     color: $second-color;
+    background-color: whitesmoke;
+    border-radius: 6rem;
+    font-style: $fontStyle;
+}
+
+img  {
+padding: 2rem;
+width: 12rem;
+}
+
+
+h1 {
+    font-family: $fontStyle;
+    color: $primary-color;
     margin: 0;
-    padding: 1rem;
+    padding: 3rem 1rem 1rem 1rem;
+    border-bottom: $primary-color;
 }
 
 h2 {
-    font-style: $fontStyle;
+    font-family: $fontStyle;
     color: $primary-color;
     margin: 0;
-    padding: 0.5rem;
+    padding: 0.8rem 2rem 0.4rem 2rem; 
+    border-top: 0.3rem solid;
 }
 
 p {
-    font-style: $fontStyle;
+    font-family: $fontStyle;
+    color: $primary-color;
     margin: 0;
-    padding: 0.5rem;
+    padding: 0.3rem 3rem 4rem 3rem;
 }
